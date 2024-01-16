@@ -1,0 +1,10 @@
+[Unit]
+Description=My Flask Application
+
+[Service]
+ExecStart=/usr/bin/python3 /home/ubuntu/app.py
+WorkingDirectory=/home/ubuntu
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
